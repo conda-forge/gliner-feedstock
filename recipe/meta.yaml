@@ -1,5 +1,5 @@
 {% set name = "gliner" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gliner-{{ version }}.tar.gz
-  sha256: 2c00570066a016d3ec682fc0d1aa0c61e7318873343662233c6994ac37fb2a10
+  sha256: dcbb76ef0df46922c22be39f7d5b50c325f913c7974e2e216016c473ececd82c
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - seqeval
     - tqdm
     - urllib3 <2.0.0,>=1.0.0  # inherited from flair
+    - onnxruntime
 
 test:
   imports:
