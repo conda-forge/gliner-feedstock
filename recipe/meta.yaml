@@ -29,6 +29,7 @@ requirements:
     - seqeval
     - tqdm
     - urllib3 <2.0.0,>=1.0.0  # inherited from flair
+    - onnxruntime
 
 test:
   imports:
