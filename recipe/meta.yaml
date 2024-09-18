@@ -1,5 +1,5 @@
 {% set name = "gliner" %}
-{% set version = "0.2.11" %}
+{% set version = "0.2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gliner-{{ version }}.tar.gz
-  sha256: c4d7aa46291373c60c7f2f5b69a8f6090dc83c76f7c13c96a9edb8be669ebde3
+  sha256: 41d0a616aecb741575bd07120a6189ffc8c602a59d2aa421fbe5514fb41691cb
 
 build:
   noarch: python
